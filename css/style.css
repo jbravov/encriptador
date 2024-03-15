@@ -1,0 +1,562 @@
+:root {
+    --fuente-ppal: 'Inter', sans-serif;
+    --color-Body: #e5e5e5;
+    --color-Blanco: #fff;
+    --color-Dark_blue100: #609ed4;
+    --color-Dark_blue200: #356ea9;
+    --color-Dark_blue300: #0a3871;
+    --color-Dark_blue400: #072b61;
+    --color-Dark_blue500: #052051;
+    --color-Gray100: #ced4da;
+    --color-Gray200: #abd5bd;
+    --color-Gray300: #868e96;
+    --color-Gray400: #495057;
+    --color-Gray500: #343a40;
+    --color-Light_Blue100: #f3f5fc;
+    --color-Light_Blue200: #eff1fa;
+    --color-Light_Blue300: #d8dfe8;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: var(--fuente-ppal);
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-Body);
+    width: 144rem;
+    height: 102.4rem;
+    top: 62.2rem;
+    left: -227.7rem;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 7rem;
+}
+
+.logo{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    width: 12rem;
+    height: 5rem;
+    color: var(--color-Dark_blue300);
+}
+
+main{
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-caja-texto{
+    position: absolute;
+    top: 16.8rem;
+    left: 24rem;
+    width: 108rem;
+    height: 60rem;
+}
+
+.caja-texto{
+    width: 57.7rem;
+    height: auto;
+    border: none;
+    background-color: var(--color-Body);
+    cursor: pointer;
+    color: var(--color-Dark_blue300);
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    font-weight: 400;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+}
+
+.caja-texto::placeholder{
+    color: var(--color-Dark_blue300);
+}
+
+.alerta{
+    position: absolute;
+    top: 85.1rem;
+    left: 24rem;
+    display: flex;
+    color: var(--color-Gray400);
+    gap: 0.8rem;
+    width: 22.9rem;
+}
+
+alerta img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.alerta p{
+    width: 20.5rem;
+    height: 1.8rem;
+    opacity: 80%;
+    font: var(--fuente-ppal);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+}
+
+.contenedor-botones{
+    position: absolute;
+    display: flex;
+    top: 88.5rem;
+    left: 24rem;
+    width: 68rem;
+    height: 6.7rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5em;
+    gap: 2.4rem;
+}
+
+.btn-encriptar{
+    width: 32.8rem;
+    height: 6.7rem;
+    padding: 24px;
+    border-radius: 2.4rem;
+    background-color: var(--color-Dark_blue300);
+    color: var(--color-Blanco);
+    font-weight: 400; 
+    border: none;   
+    cursor: pointer; 
+}
+
+.btn-encriptar:hover{
+    background-color: var(--color-Dark_blue400);
+    color: var(--color-Blanco);  
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+
+}
+
+.btn-desencriptar{
+    width: 32rem;
+    height: 6.7rem; 
+    border-radius: 2.4rem;
+    line-height: 1.936rem;
+    background-color: var(--color-Gray100);
+    color: var(--color-Dark_blue300);
+    font-weight: 400; 
+    border: 0.1rem solid var(--color-Dark_blue300);    
+    cursor: pointer;  
+}
+
+.btn-desencriptar:hover{
+    background-color: var(--color-Gray300);
+    color: var(--color-Dark_blue400);  
+    border: 0.1rem solid var(--color-Dark_blue500);   
+}
+
+.seccion2{
+    position: absolute;
+    top: 4rem;
+    left: 100rem;
+    background-color: var(--color-Blanco);
+    width: 40rem;
+    height: 94.4rem;
+    border-radius: 3.2rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+.contenedor-muneico{
+    position: absolute;
+    top: 28.3rem;
+    left: 2.5rem;
+    box-sizing: border-box;
+    padding-top: 5rem;
+    width: 33.6rem;
+    height: 30.4rem;
+}
+
+.contenedor-parrafo{
+    position: absolute;
+    top: 67.9rem;
+    left: 2.5rem;
+    width: 33.6rem;
+    height: 12.2rem;
+    line-height: 1.6rem;
+}
+.contenedor-parrafo h4{
+    width: 33.6rem;
+    height: 5.8rem;
+    color: var(--color-Gray500);    
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.88rem; 
+    text-align: center;
+    margin-bottom: 1.6rem;   
+}
+
+.contenedor-parrafo p{
+    width: 33.6rem;
+    height: 4.8rem;
+    color: var(--color-Gray400);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.contenedor-resultado{
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 33.6rem;
+    height: 78.1rem;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 2rem;
+}
+
+.contenedor-resultado textarea{
+    color: var(--color-Gray400);
+    top: 2rem;
+    left: 1rem;
+    width: 33.6rem;
+    height: 78.1rem;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    line-height: 3.6rem;
+    font-size: 2.4rem;
+}
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    top: 82.5rem;
+    left: 4rem;
+    width: 33.6rem;
+    height: 6.7rem;
+}
+
+.btn-copiar{
+    position: absolute;
+    width: 32.8rem;
+    height: 6.7rem; 
+    border-radius: 2.4rem;
+    border: 1px solid var(--color-Dark_blue300);
+    color: var(--color-Dark_blue300);
+    background-color: var(--color-blanco);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 2.4rem;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    top: 108rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    bottom: 0;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+@media (max-width: 768px)  {
+    body{
+        width: 76.8rem;
+        height: 117.4rem;
+        top: 202.4rem;
+        left: -227.7rem;
+
+    }
+    header{
+        position: relative;
+        width: min(100%); 
+        height: 76.8rem;
+    }
+    .logo{
+        position: absolute;
+        width: 3.109rem;
+        height: 5.058rem;
+        top: 7.342rem;
+        left: 4rem;
+        color: var(--color-Dark_blue300);
+    }
+    .contenedor-caja-texto{
+        position: absolute;
+        top: 24rem;
+        left: 4rem;
+        width: 68.8rem;
+        height: 4.8rem;
+    }
+    .caja-texto{
+        width: 68.8rem;
+        height: auto;
+    }
+    .alerta{
+        position: absolute;
+        top: 83.6rem;
+        left: 4rem;  
+        width: 22.9rem;
+    }
+    .alerta p{
+        width: 20.5rem;
+        height: 1.8rem;           
+    }
+    .contenedor-botones{
+        position: absolute;
+        top: 87rem;
+        left: 4rem;
+    }    
+    .seccion2{
+        top: 100.1rem;
+        left: 4rem;
+        width: 68.8rem;
+        height: 34.3rem;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 3.2rem;
+    }
+    .contenedor-muneico{
+        opacity: 0;        
+    }
+    .contenedor-parrafo{
+        position: absolute;
+        top: 15rem; 
+        left: 4rem;
+        width: 68.8rem;
+        height: 6.9rem;
+        gap: 1.6rem;
+    }
+    .contenedor-parrafo h4{
+        margin-bottom: 0;
+        width: 62.4rem;
+        height: 2.9rem;
+        font-size: 2.4rem;
+        line-height: 2.88rem; 
+        padding-bottom: 3.2rem;
+    }
+    .contenedor-parrafo p{
+        width: 62.4rem;
+        height: 2.4rem;
+    }
+    .contenedor-resultado{
+        position: absolute;
+        top: 0;
+        left: -0.1rem;
+        width: 62.4rem;
+        height: 18rem;
+        background-color: var(--color-Blanco);
+        border-radius: 3.2rem;
+        margin: 0 0 3.2rem 0;
+        padding: 3.2rem;
+    }
+    .contenedor-resultado textarea{
+        width: 62.4rem;
+        height: 18rem;
+        color: var(--color-Gray400);
+        font-family: var(--fuente-ppal);
+        font-weight: 400;    
+        font-size: 2.4rem;
+        line-height: 3.6rem;   
+    }
+    .contenedor-copiar{
+        display: flex;
+        position: absolute;
+        width: 62.4rem;
+        height: 6.7rem;
+    }    
+    .btn-copiar{
+        position: relative;
+        top: -60rem;
+        width: 62.4rem;
+        height: 6.7rem; 
+        border-radius: 2.4rem;
+        border: 1px solid var(--color-Dark_blue300);
+        color: var(--color-Dark_blue300);
+        background-color: var(--color-blanco);
+        cursor: pointer;
+        line-height: 1.936rem;
+    }
+    footer{
+        position: relative;
+        text-align: center;
+        top: 140rem;
+        left: 0;
+        margin-top: 1rem;
+        font-size: small;
+    }
+}
+
+@media (max-width:320px) {  
+    body{
+        width: 37.5rem;
+        height: 93.3rem; 
+        top: 358.8rem;
+        left: -72rem;
+
+    }   
+    header{
+        position: absolute;
+        width: 100%; 
+        height: 3.2rem;
+    }
+    .logo{
+        position: relative;
+        top: 2.4rem;
+        left: 1.6rem;
+        width: 3.2rem;
+        height: 4.8rem;
+        color: var(--color-Dark_blue300);
+    }
+    .contenedor-caja-texto{
+        position: absolute;
+        top: 15.2rem;
+        left: 1.6rem;
+        width: 34.3rem;
+        height: 4.8rem;
+    }
+    .caja-texto{
+        width: 34.3rem;
+        height: auto;
+        font-size: 2.2rem;
+        line-height: 4.8rem;
+    }
+    .alerta{
+        position: absolute;
+        width: 22.9rem;
+        top: 45.1rem;
+        left: 1.6rem; 
+        margin-bottom: 0.8rem; 
+        font-weight: 400; 
+    }
+    .alerta p{
+        width: 20.5rem;
+        height: 1.8rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .contenedor-botones{
+        position: absolute;        
+        top: 48.5rem;
+        left: 1.6rem;
+        width: 34.3rem;
+        height: 15.8rem;
+        border-bottom: 2.4rem;
+        flex-direction: column;
+    } 
+    .btn-encriptar{
+        position: relative;
+        width: 34.3rem;
+        height: 6.7rem;
+        padding: 2.4rem;
+        border-bottom: 0.8rem;
+    }
+    .btn-desencriptar{
+        position: relative;
+        width: 34.3rem;
+        height: 6.7rem;
+        padding: 2.4rem;
+        border-bottom: 0.8rem;
+    }
+    .seccion2{
+        top: 70.7rem;
+        left: 2.4rem;
+        width: 32.7rem;
+        height: 59.5rem;   
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 3.2rem;
+    }
+    .contenedor-muneico{
+        opacity: 0;        
+    }
+    .contenedor-parrafo{
+        position: absolute;
+        top: 25.2rem;  
+        left: 2rem;
+        width: 26.3rem;
+        height: 12.2rem;
+        gap: 1.6rem;
+    }
+    .contenedor-parrafo h4{
+        width: 26.3rem;
+        height: 5.8rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.88rem;
+        padding: 0;
+    }
+    .contenedor-parrafo p{
+        width: 26.3rem;
+        height: 4.8rem;
+    }
+    .contenedor-resultado{
+        position: relative;
+        top: 2rem;
+        left: 2.5rem;
+        width: 27.9rem;
+        height: 43.2rem;
+        background-color: var(--color-Blanco);
+        border-radius: 2.4rem;
+        padding: 0;
+        margin: 0;
+    }
+    .contenedor-resultado textarea{
+        width: 27.9rem;
+        height: 43.2rem;
+        font-weight: 400;
+        line-height: 3.6rem;        
+        box-sizing: border-box;
+        color: var(--color-Gray400);
+    }
+    .contenedor-copiar{
+        display: flex;
+        position: absolute;
+        top: 4.2rem;
+        left: 2rem;
+    }    
+    .btn-copiar{
+        position: relative;
+        top: 45rem;
+        left: 2rem;
+        width: 27.9rem;
+        height: 6.7rem; 
+        border-radius: 2.4rem;
+        border: 1px solid var(--color-Dark_blue300);
+        color: var(--color-Dark_blue300);
+        background-color: var(--color-blanco);
+        cursor: pointer;
+        line-height: 1.936rem;
+    }
+    footer{
+        position: relative;
+        text-align: center;
+        top: 135rem; 
+        left: 0;
+        font-size: small;
+        /* margin-top: 2rem; */
+        
+    }
+}
