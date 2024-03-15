@@ -14,6 +14,9 @@ Herramien.
 - La letra "o" es convertida para "ober"
 - La letra "u" es convertida para "ufat"
 
+<h2>Recursos Gráficos </h2>  
+El diseño e imagenes son públicos y fueron proporcionados por ALURA LATAM, para el desarrollo de este prouyecto.
+
 <h2>Operación</h2>  
 -  Teclear un en el campo de texto.
 <br>
