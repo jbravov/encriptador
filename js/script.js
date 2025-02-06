@@ -13,6 +13,7 @@
 
 // Definicion de variables
 
+
 const figura = document.querySelector("#fig");
 const parrafo = document.querySelector(".contenedor-parrafo");
 const inputText = document.querySelector('.caja-texto');
